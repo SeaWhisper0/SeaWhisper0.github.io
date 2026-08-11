@@ -4,8 +4,10 @@
 ## Overview
 - This is a forensics challenge that provides an image file, `enc.png`.
 - The idea: compare `enc.png` with the original image to find the bits that differ.
-
-![description](/images/ctf/scriptCTF2026/john_cena_for/description.png)
+- Description:
+```text
+You can't see me!
+```
 
 ## Analysis
 - I first tried common tools such as `strings`, `exiftool`, and `binwalk` to inspect the file, but found nothing interesting.
