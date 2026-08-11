@@ -377,7 +377,10 @@ const PostView = {
             wrapper.appendChild(btn);
 
             pre.addEventListener('mousemove', (e) => {
-                const onScrollbar = e.offsetX > pre.clientWidth || e.offsetY > pre.clientHeight;
+                const rect = pre.getBoundingClientRect();
+                const x = e.clientX - rect.left - pre.clientLeft;
+                const y = e.clientY - rect.top - pre.clientTop;
+                const onScrollbar = x < 0 || y < 0 || x > pre.clientWidth || y > pre.clientHeight;
                 wrapper.classList.toggle('active', !onScrollbar);
             });
             wrapper.addEventListener('mouseleave', () => wrapper.classList.remove('active'));
@@ -756,39 +759,6 @@ const TOC = {
 };
 
 // ============================================
-// LOGO TYPEWRITER
-// ============================================
-const LogoTyper = {
-    text: 'SeaWhisper0',
-    baseDelay: 90,
-
-    init() {
-        const textEl   = document.querySelector('.logo-text');
-        const cursorEl = document.querySelector('.logo-cursor');
-        if (!textEl || !cursorEl) return;
-
-        if (sessionStorage.getItem('logoTyped')) {
-            textEl.textContent = this.text;
-            return;
-        }
-
-        cursorEl.classList.add('typing');
-        let i = 0;
-        const tick = () => {
-            textEl.textContent = this.text.slice(0, ++i);
-            if (i < this.text.length) {
-                const jitter = this.baseDelay + (Math.random() - 0.5) * 55;
-                setTimeout(tick, jitter);
-            } else {
-                cursorEl.classList.remove('typing');
-                sessionStorage.setItem('logoTyped', '1');
-            }
-        };
-        setTimeout(tick, 300);
-    }
-};
-
-// ============================================
 // APP INITIALIZATION
 // ============================================
 const App = {
@@ -797,7 +767,6 @@ const App = {
         DataManager.loadPosts();
         Router.init();
         EventHandlers.init();
-        LogoTyper.init();
     }
 };
 
