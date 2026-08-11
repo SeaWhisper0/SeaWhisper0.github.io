@@ -22,7 +22,7 @@
     --accent-purple: #8b5cf6;
     
     /* Code Block Colors - Light */
-    --code-bg: #f6f8fa;
+    --code-bg: #edece7;
     --code-inline-text: #24292f;
     --code-comment: #6a737d;
     --code-keyword: #d73a49;
@@ -471,26 +471,13 @@ body.reading-mode main {
     display: flex;
 }
 
+/* Full-bleed panel; surface/text colours come from the global theme palette. */
 body.reading-mode .container {
     flex: 1 1 auto;
     max-width: 100%;
     margin: 0;
     border-radius: 0;
     box-shadow: none;
-
-    --bg-secondary: #f5f4f1;
-    --bg-hover: #ebe9e4;
-    --border-color: #e3e0d9;
-    --code-bg: #edece7;
-    background: var(--bg-secondary);
-}
-
-html.dark-mode body.reading-mode .container {
-    --bg-secondary: #262b38;
-    --bg-hover: #2f3644;
-    --border-color: #363d4b;
-    --code-bg: #1e2531;
-    --text-secondary: #cbd5e1;
 }
 
 body.reading-mode .post-layout {
