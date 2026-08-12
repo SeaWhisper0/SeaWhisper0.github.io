@@ -14,7 +14,7 @@
 - **Commit and push** to your fork.
 - Open a **pull request** to this repository.
 
-### 1️⃣ Register the post in [`posts/index.txt`](./posts/index.txt)
+### 1️⃣ Register the post in [`/posts/index.txt`](/posts/index.txt)
 
 Add an entry to the JSON array — set **`category`** to `ctf` or `research`:
 
@@ -38,9 +38,9 @@ Add an entry to the JSON array — set **`category`** to `ctf` or `research`:
 | `description` | One-line summary on the card |
 | `tags` | Topic tags (list) |
 
-### 2️⃣ Write the article in [`/posts`](./posts)
+### 2️⃣ Write the article in [`/posts`](/posts)
 
-Create your Markdown file (e.g. `posts/ctf/demo.md`):
+Create your Markdown file (e.g. `/posts/ctf/demo.md`):
 
 ````markdown
 # Title
@@ -58,16 +58,16 @@ What we found and how we approached it.
 ```
 ````
 
-- **Images** → put them in the [`/images`](./images) folder, then reference them in the Markdown.
-- **Videos** → put them in the [`/videos`](./videos) folder, then reference them in the Markdown.
+- **Images** → put them in the [`/images`](/images) folder, then reference them in the Markdown.
+- **Videos** → put them in the [`/videos`](/videos) folder, then reference them in the Markdown.
 
 ### 3️⃣ Result
 
-![index](./images/README/index.png)
+![index](/images/README/index.png)
 
-![web_index](./images/README/web_index.png)
+![web_index](/images/README/web_index.png)
 
-![web_content](./images/README/web_content.png)
+![web_content](/images/README/web_content.png)
 
 ---
 
