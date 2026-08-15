@@ -14,5 +14,37 @@
         "date": "2026-08-10",
         "description": "Bypass a blacklist filter to achieve eval() injection via the 'wpm' parameter.",
         "tags": ["web", "rce"]
+    },
+    {
+        "title": "scriptCTF 2026 - 404 Found (Web)",
+        "category": "ctf",
+        "file": "posts/ctf/scriptCTF2026/404_found.md",
+        "date": "2026-08-10",
+        "description": "Find a hidden endpoint disclosed through robots.txt to retrieve the flag.",
+        "tags": ["web"]
+    },
+    {
+        "title": "scriptCTF 2026 - Bruteforced (Forensics)",
+        "category": "ctf",
+        "file": "posts/ctf/scriptCTF2026/Bruteforced.md",
+        "date": "2026-08-10",
+        "description": "Use Wireshark HTTP filters to find the single successful request among thousands of bruteforce attempts.",
+        "tags": ["forensics", "pcap"]
+    },
+    {
+        "title": "scriptCTF 2026 - Titan (Geo-OSINT)",
+        "category": "ctf",
+        "file": "posts/ctf/scriptCTF2026/Titan.md",
+        "date": "2026-08-10",
+        "description": "Track down an Instagram post about the deepest underwater product photoshoot to extract the coordinates.",
+        "tags": ["geo-osint"]
+    },
+    {
+        "title": "scriptCTF 2026 - Misdirection (Crypto)",
+        "category": "ctf",
+        "file": "posts/ctf/scriptCTF2026/misdirection.md",
+        "date": "2026-08-10",
+        "description": "Decode a binary-looking string using Bacon Cipher to recover the flag.",
+        "tags": ["crypto", "binary"]
     }
 ]
