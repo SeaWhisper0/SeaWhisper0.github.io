@@ -1,5 +1,13 @@
 [
     {
+        "title": "HiCyberCon CTF 2026 - Full Reverse Engineering Sweep",
+        "category": "ctf",
+        "file": "posts/ctf/hicybercon2026/all-reverse-writeups.md",
+        "date": "2026-11-06",
+        "description": "Solving all 7 reverse challenges: Nim constraint VM, IEEE-754 edge cases, GnuCOBOL packed-decimal, BEAM bytecode, GF(2^64) + Smart's attack, custom EXE-9 VM, and elliptic-curve gates.",
+        "tags": ["reverse", "vm", "crypto", "z3"]
+    },
+    {
         "title": "scriptCTF 2026 - John Cena (Forensics)",
         "category": "ctf",
         "file": "posts/ctf/scriptCTF2026/john_cena_for.md",
