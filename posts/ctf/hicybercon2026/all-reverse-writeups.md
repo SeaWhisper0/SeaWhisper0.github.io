@@ -1,6 +1,6 @@
 # HiCyberCon CTF 2026 - Full Reverse Engineering Sweep
 
-**Author**: lucas
+**Author**: fatfish
 
 ## Overview
 
@@ -1184,6 +1184,3 @@ Passkey:
 hiCTF{m4th_c0ntr0l_fl0w_3ll1pt1c_dlog_4f7b2c9e}
 ```
 
-## What we didn't solve
-
-Three challenges were still open when the event ended — no flags, no writeups: `chall` (16 solver attempts against a token string in `chall.txt`), `inner-engine` (z3 + unseal emulation), and `logjam` (DLP + AES-GCM). Next time.
